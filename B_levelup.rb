@@ -53,3 +53,13 @@ ans = 0
 end
 
 puts ans
+
+
+# インクリメント
+# n に 1 を加算して出力
+num = gets.chomp.to_i
+puts num + 1
+
+# 文字列の出力
+num = gets.chomp.to_i
+(0...num).each { puts gets.chomp }
