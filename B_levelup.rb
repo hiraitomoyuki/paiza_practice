@@ -63,3 +63,11 @@ puts num + 1
 # 文字列の出力
 num = gets.chomp.to_i
 (0...num).each { puts gets.chomp }
+
+# 文字列の分割
+str = gets
+puts str.split(' ')
+
+# 整数の足し算
+nums = gets.split(' ')
+puts nums[0].to_i + nums[1].to_i
