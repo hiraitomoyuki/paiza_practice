@@ -69,3 +69,11 @@ n = gets
 n = '0' + n while n.length < 3
 
 puts n
+
+# 数字の文字列操作（時刻1） (paizaランク D 相当)
+# 時刻を表す長さ 5 の文字列 S が “XX:XX” の形式で与えられます。入力された時刻を時と分に分け、時、分の順番で改行区切りで出力してください。
+s = gets
+
+a = s.split(':').map(&:to_i)
+puts a[0]
+puts a[1]
