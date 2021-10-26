@@ -77,3 +77,25 @@ s = gets
 a = s.split(':').map(&:to_i)
 puts a[0]
 puts a[1]
+
+# 数字の文字列操作（時刻2） (paizaランク D 相当)
+# 時刻を表す長さ 5 の文字列 S が “XX:XX” の形式で与えられます。与えられた時刻の 30 分後の時刻を同じ形式で出力してください。
+s = gets
+
+a = s.split(':').map(&:to_i)
+h = a[0]
+m = a[1]
+
+m += 30
+if m > 59
+  m -= 60
+  h += 1
+end
+
+h = h.to_s
+m = m.to_s
+
+h = '0' + h if h.length == 1
+m = '0' + m if m.length == 1
+
+puts h + ':' + m
